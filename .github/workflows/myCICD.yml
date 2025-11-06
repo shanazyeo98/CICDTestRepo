@@ -6,3 +6,8 @@ on:
 jobs:
   builds:
     runs-on: ubuntu-latest
+    steps:
+      - name: Check out my code
+        uses: actions/checkout@v2
+      - name: list out directory
+        run: ls
